@@ -1,3 +1,12 @@
+## [2.0.2](https://github.com/ajk-hub/test/compare/v2.0.1...v2.0.2) (2021-09-14)
+
+
+### Bug Fixes
+
+* changelog and release ([bd1382e](https://github.com/ajk-hub/test/commit/bd1382e08d3647b915e32acc06a443fd21b14e1a))
+
+
+
 ## [2.0.1](https://github.com/ajk-hub/test/compare/v0.1.1...v2.0.1) (2021-09-14)
 
 
