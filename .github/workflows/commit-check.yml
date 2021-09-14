@@ -1,21 +1,27 @@
-name: Testes
+# .github/workflows/conventional-pr.yml
 
-on: [pull_request, push]
-
+name: conventional-pr
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - edited
+      - synchronize
 jobs:
-  conventional-commits-checker:
+  lint-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      # check for the most recent release: https://github.com/CondeNast/conventional-pull-request-action/releases
+      # replace vX.X.X below with the most recently released version
+      - uses: CondeNast/conventional-pull-request-action@vX.X.X
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          node-version: '12.x'
-      - run: cd .github/conventionalcommits && npm install
-      - run: cd .github/conventionalcommits && npm run build --if-present
-
-      - name: conventional-commits-checker
-        id: hello
-        uses: ./.github/conventionalcommits/
+          # to override config-conventional rules, specify a relative path to your rules module, actions/checkout is required for this setting!
+          commitlintRulesPath: "./commitlint.rules.js" # default: undefined
+          # if the PR contains a single commit, fail if the commit message and the PR title do not match
+          commitTitleMatch: "true" # default: 'true'
