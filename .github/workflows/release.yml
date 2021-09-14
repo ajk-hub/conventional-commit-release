@@ -13,18 +13,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      # - name: Release
-      #   uses: jef/conventional-commits-release-action@v1
-      #   with:
-      #     create-major: true
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Conventional Changelog Action
+      - name: Generate changelog
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          output-file: "true"
 
       - name: Create Release
         uses: actions/create-release@v1
