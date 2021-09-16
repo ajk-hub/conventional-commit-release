@@ -10,6 +10,10 @@ It is a sample for the conventional commit and release pipeline. It provides the
 - Provides stale issue configuration
 
 
+## Enable Husky Hook
+`npx husky install`
+
+
 ## References
 
 ### [Conventional Changelog Action](https://github.com/TriPSs/conventional-changelog-action)
