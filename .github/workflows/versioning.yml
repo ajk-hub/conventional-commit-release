@@ -4,7 +4,7 @@ on:
   release:
 
 jobs:
-  run-tag-latest:
+  create-latest-tag:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
