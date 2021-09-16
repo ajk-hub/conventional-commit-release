@@ -7,13 +7,13 @@
     "commit",
     "release"
   ],
-  "homepage": "https://github.com/ajk-hub/test#readme",
+  "homepage": "https://github.com/ajk-hub/conventional-commit-release#readme",
   "bugs": {
-    "url": "https://github.com/ajk-hub/test/issues"
+    "url": "https://github.com/ajk-hub/conventional-commit-release/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ajk-hub/test.git"
+    "url": "git@github.com:ajk-hub/conventional-commit-release.git"
   },
   "license": "MIT",
   "author": {
