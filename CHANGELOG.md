@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/ajk-hub/test/compare/v2.1.0...v2.1.1) (2021-09-16)
+
+
+### Bug Fixes
+
+* add docs and update pipeline ([#12](https://github.com/ajk-hub/test/issues/12)) ([4867ec8](https://github.com/ajk-hub/test/commit/4867ec87665f56b8d691b766152433001a8db728))
+
+
+
 # [2.1.0](https://github.com/ajk-hub/test/compare/v2.0.2...v2.1.0) (2021-09-16)
 
 
