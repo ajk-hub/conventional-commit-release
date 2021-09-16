@@ -1,9 +1,11 @@
 {
-  "name": "test",
+  "name": "conventional-commit-release",
   "version": "2.1.1",
-  "description": "Test",
+  "description": "Conventional Commit and Release",
   "keywords": [
-    "test"
+    "conventional",
+    "commit",
+    "release"
   ],
   "homepage": "https://github.com/ajk-hub/test#readme",
   "bugs": {
