@@ -2,7 +2,9 @@ name: Versioning
 
 on:
   release:
-    types: [published, edited]
+    types:
+      - published
+      - edited
 
 jobs:
   create-latest-tag:
