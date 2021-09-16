@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/ajk-hub/test/compare/v2.0.2...v2.1.0) (2021-09-16)
+
+
+### Features
+
+* commit checker ([#11](https://github.com/ajk-hub/test/issues/11)) ([9e074e9](https://github.com/ajk-hub/test/commit/9e074e9c6ff20e81775644b96c0ef1de982dac3c))
+
+
+
 ## [2.0.2](https://github.com/ajk-hub/test/compare/v2.0.1...v2.0.2) (2021-09-14)
 
 
