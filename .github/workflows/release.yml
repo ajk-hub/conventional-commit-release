@@ -1,8 +1,10 @@
-name: Release
+name: Release CI
+
 on:
   push:
     branches:
       - main
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -17,10 +19,10 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          git-user-name: 'Github Action'
-          git-user-email: 'ajk-hub@github.actions.com'
-          output-file: 'CHANGELOG.md'
-          release-count: '0'
+          git-user-name: "Github Action"
+          git-user-email: "ajk-hub@github.actions.com"
+          output-file: "CHANGELOG.md"
+          release-count: "0"
 
       - name: Create Release
         uses: actions/create-release@v1

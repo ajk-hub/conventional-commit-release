@@ -1,8 +1,8 @@
-name: Keep the versions up-to-date
+name: Versioning CI
 
 on:
   release:
-    types: [published, edited]
+    types: [released]
 
 jobs:
   run-tag-latest:
@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          publish_latest_tag: 'true'
+          publish_latest_tag: "true"
