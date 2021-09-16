@@ -1,3 +1,14 @@
+# [2.2.0](https://github.com/ajk-hub/conventional-commit-release/compare/v2.1.1...v2.2.0) (2021-09-16)
+
+
+### Features
+
+* update docs and package.json ([#14](https://github.com/ajk-hub/conventional-commit-release/issues/14)) ([87b7259](https://github.com/ajk-hub/conventional-commit-release/commit/87b7259552185f400c3b1bbeddc32e8081d4990a))
+* update pipeline ([#15](https://github.com/ajk-hub/conventional-commit-release/issues/15)) ([e5eb3d9](https://github.com/ajk-hub/conventional-commit-release/commit/e5eb3d95a7c220f1b5eb6bd552ed3bdfa108aee2))
+* update url ([#16](https://github.com/ajk-hub/conventional-commit-release/issues/16)) ([f28ac8f](https://github.com/ajk-hub/conventional-commit-release/commit/f28ac8f1c3b282afd75cdfada54f14c9f2471321))
+
+
+
 ## [2.1.1](https://github.com/ajk-hub/conventional-commit-release/compare/v2.1.0...v2.1.1) (2021-09-16)
 
 
@@ -54,3 +65,6 @@
 
 
 ## 0.0.1 (2021-09-14)
+
+
+
