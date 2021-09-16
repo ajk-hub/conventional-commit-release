@@ -1,8 +1,7 @@
-name: Versioning CI
+name: Versioning
 
 on:
   release:
-    types: [released]
 
 jobs:
   run-tag-latest:

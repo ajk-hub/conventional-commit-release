@@ -1,4 +1,4 @@
-name: Main CI
+name: Main
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ on:
       - synchronize
 
 jobs:
-  conventional-pr:
+  commit-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
