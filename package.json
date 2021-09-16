@@ -1,5 +1,26 @@
 {
   "name": "test",
   "version": "2.0.2",
-  "description": "Test"
+  "description": "Test",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/ajk-hub/test#readme",
+  "bugs": {
+    "url": "https://github.com/ajk-hub/test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ajk-hub/test.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ashim Jung Khadka",
+    "email": "ashim.jung.khadka@gmail.com"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.2"
+  }
 }
