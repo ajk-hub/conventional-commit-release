@@ -37,3 +37,7 @@ It checks if your commit messages meet the conventional commit format.
 
 ### [Actions Tagger](https://github.com/Actions-R-Us/actions-tagger)
 Keep your action versions up-to-date by automatically promoting a major tag and the latest tag each time a release is created.
+
+
+### [Release Action](https://github.com/ncipollo/release-action)
+This action will create a GitHub release and upload an artifact to it.
