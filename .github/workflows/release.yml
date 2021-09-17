@@ -18,7 +18,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.github_token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           git-user-name: "Github Action"
           git-user-email: "ajk-hub@github.actions.com"
           output-file: "CHANGELOG.md"
@@ -33,6 +33,12 @@ jobs:
           name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
           artifacts: "artifacts/*"
+
+      - uses: Actions-R-Us/actions-tagger@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          publish_latest_tag: true
+
       # - uses: "marvinpinto/action-automatic-releases@latest"
       #   with:
       #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
