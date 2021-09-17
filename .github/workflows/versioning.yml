@@ -5,6 +5,8 @@ on:
     types:
       - published
       - edited
+      - created
+      - released
 
 jobs:
   create-latest-tag:
