@@ -1,3 +1,12 @@
+## [2.3.7](https://github.com/ajk-hub/conventional-commit-release/compare/v2.3.6...v2.3.7) (2021-09-17)
+
+
+### Bug Fixes
+
+* **pipeline:** release versioning ([cb638e5](https://github.com/ajk-hub/conventional-commit-release/commit/cb638e534357e86253cd17a94282afa75690c4b6))
+
+
+
 ## [2.3.6](https://github.com/ajk-hub/conventional-commit-release/compare/v2.3.5...v2.3.6) (2021-09-17)
 
 
