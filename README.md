@@ -14,6 +14,25 @@ It is a sample for the conventional commit and release pipeline. It provides the
 `npx husky install`
 
 
+## Install Commit Lint
+```
+# Install commitlint cli and conventional config
+npm install --save-dev @commitlint/{config-conventional,cli}
+
+# Configure commitlint to use conventional config
+echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+
+# Install Husky v6
+npm install husky --save-dev
+
+# Activate hooks
+npx husky install
+
+# Add hook
+npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+```
+
+
 ## References
 
 ### [Conventional Changelog Action](https://github.com/TriPSs/conventional-changelog-action)
