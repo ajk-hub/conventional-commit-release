@@ -33,14 +33,3 @@ jobs:
           name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
           artifacts: "artifacts/*"
-
-      - uses: Actions-R-Us/actions-tagger@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          publish_latest_tag: true
-
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     prerelease: false
-      #     automatic_release_tag: "latest"
