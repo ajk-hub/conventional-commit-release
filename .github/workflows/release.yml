@@ -25,7 +25,7 @@ jobs:
           release-count: "0"
 
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.8.9
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,13 +1,8 @@
 name: Versioning
 
 on:
-  workflow_dispatch:
   release:
-    types:
-      - published
-      - edited
-      - created
-      - released
+    types: [published, created, edited]
 
 jobs:
   create-latest-tag:
