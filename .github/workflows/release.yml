@@ -24,12 +24,19 @@ jobs:
           output-file: "CHANGELOG.md"
           release-count: "0"
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1.8.9
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      - uses: maxkomarychev/oction-create-release@v0.7.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.changelog.outputs.tag }}
+          tag_name: ${{ steps.changelog.outputs.tag }}
           name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
-          artifacts: "artifacts/*"
+
+      # - name: Create Release
+      #   uses: ncipollo/release-action@v1.8.9
+      #   if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     tag: ${{ steps.changelog.outputs.tag }}
+      #     name: ${{ steps.changelog.outputs.tag }}
+      #     body: ${{ steps.changelog.outputs.clean_changelog }}
+      #     artifacts: "artifacts/*"
