@@ -1,15 +1,14 @@
-# name: Versioning
+name: Versioning
 
-# on:
-#   release:
-#     types:
-#       - published
-#       - edited
+on:
+  release:
+    types: [published]
 
-# jobs:
-#   create-latest-tag:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: Actions-R-Us/actions-tagger@latest
-#         with:
-#           publish_latest_tag: true
+jobs:
+  create-latest-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Actions-R-Us/actions-tagger@v1
+        with:
+          GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+          publish_latest_tag: true
